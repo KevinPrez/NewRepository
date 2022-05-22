@@ -13,7 +13,7 @@ unCursor=conexion.cursor()
 cancion='JUAN'
 cantante='Two Door Cinema Club'
 favorito=0            #1=True; 0=False
-#INSERTAR
+
 
 unCursor.execute("select * from MUSICA where CANCION='{}' AND CANTANTE='{}' ".format(cancion,cantante ))
 #listaMusic=unCursor.fetchone()
