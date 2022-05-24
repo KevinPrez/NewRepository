@@ -3,7 +3,6 @@ from pickle import NONE
 import sqlite3
 import sys
 
-
 conexion=sqlite3.connect('MusicaFa')
 unCursor=conexion.cursor()
 
@@ -21,10 +20,6 @@ listaMusic=unCursor.fetchall()
 if(len(listaMusic)==0):
     unCursor.execute("insert into MUSICA values('{}','{}',{})".format(cancion,cantante,favorito ))
 
-
-
-
-
 #ELIMINAR
 #unCursor.execute("delete from MUSICA where CANCION='{}' and CANTANTE='{}'".format(cancion,cantante))
 
@@ -36,3 +31,5 @@ if(len(listaMusic)==0):
 
 conexion.commit() #confirma los cambios
 conexion.close()
+
+# Hola!
